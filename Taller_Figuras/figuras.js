@@ -11,11 +11,13 @@ console.groupEnd()
 // Codigo del triangulo
 console.group("Calculos triangulo")
 function PerimetroTriangulo (lado1, lado2, base) {
-    return lado1 + lado2 + base;
+    const result = lado1 + lado2 + base;
+    return result;
 }
 
 function AreaTriangulo(altura, base) {
-    return (base * altura) / 2;
+    const result = (base * altura) / 2;
+    return result;
 }
 console.groupEnd()
 
@@ -32,7 +34,7 @@ function AreaCirculo(radio) {
 function CalcularPerimetroCuadrado() {
     const input = document.getElementById("SquareInput");
     const value = input.value;
-    const perimetro = PerimetroCuadrado(value)
+    const perimetro = PerimetroCuadrado(value);
 
     alert(perimetro)
 }
@@ -43,19 +45,37 @@ function CalcularAreaCuadrado() {
 
     alert(area)
 }
-// Faltan calculos de triangulo
+function CalcularPerimetroTriangulo() {
+    const FInput = document.getElementById("FirstTriangleInput");
+    const SdInput = document.getElementById("SecondTriangleInput");
+    const TInput = document.getElementById("BaseTriangleInput");
+    const FirstValue= FInput.value;
+    const SecondValue = SdInput.value;
+    const ThirdValue = TInput.value;
+    const perimetro = PerimetroTriangulo(FirstValue,SecondValue,ThirdValue);
 
+    alert(perimetro)
+}
+function CalcularAreaTriangulo() {
+    const BaseInput = document.getElementById("BaseTriangleInput");
+    const HeightInput = document.getElementById("HeightTriangleInput");
+    const BaseValue = BaseInput.value;
+    const HValue = HeightInput.value;
+    const area = AreaTriangulo(HValue, BaseValue);
+
+    alert(area)
+}
 function CalcularPerimetroCirculo() {
     const input = document.getElementById("RadioInput");
     const value = input.value;
-    const perimetro = PerimetroCirculo(value)
+    const perimetro = PerimetroCirculo(value);
 
     alert(perimetro)
 }
 function CalcularAreaCirculo() {
     const input = document.getElementById("RadioInput");
     const value = input.value;
-    const area = AreaCirculo(value)
+    const area = AreaCirculo(value);
 
     alert(area)
 }
