@@ -1,0 +1,9 @@
+main .box-container {
+    display: grid;
+    margin: 0 auto;
+    width: 98%;
+    grid-template-columns: 1fr;
+}
+main .box-container section {
+    margin-bottom: 30px;
+}

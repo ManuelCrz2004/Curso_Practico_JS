@@ -67,6 +67,7 @@ main .box-container .square-container div {
     display: grid;
     margin: 0 auto;
     padding-top: 10px;
+    padding-bottom: 25px;
     width: 98%;
     grid-template-columns: 1fr 1fr;
 }
