@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Syne Mono', monospace;
+}
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #800000;
+}
+header h1 {
+    width: 360px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+main {
+    padding-top: 30px;
+    width: 100%;
+}
+main h2 {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+main p {
+    margin: 0 auto;
+    padding: 15px;
+    width: 80%;
+    min-width: 200px;
+    text-align: center;
+}
+main .box-container {
+    display: grid;
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 98%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main .box-container section {
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 20px;
+    border: solid 3px #800000;
+    box-shadow: 0px 5px 15px 1px rgba(128,0,0,0.65);
+}
+main .box-container .square-container h3 {
+    width: 100%;
+    text-align: center;
+}
+main .box-container .square-container p {
+    padding: 15px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+main .box-container .square-container input {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+main .box-container .square-container div {
+    display: grid;
+    margin: 0 auto;
+    width: 98%;
+    grid-template-columns: 1fr 1fr;
+}
+main .box-container .square-container div button {
+    margin: 0 auto;
+    width: 85%
+}
