@@ -46,15 +46,10 @@ function CalcularAreaCuadrado() {
     alert(area)
 }
 function CalcularPerimetroTriangulo() {
-    const FInput = document.getElementById("FirstTriangleInput");
-    const SdInput = document.getElementById("SecondTriangleInput");
-    const TInput = document.getElementById("BaseTriangleInput");
-    const FirstValue= FInput.value;
-    const SecondValue = SdInput.value;
-    const ThirdValue = TInput.value;
-    const perimetro = PerimetroTriangulo(FirstValue,SecondValue,ThirdValue);
-
-    alert(perimetro)
+    const FirstTriangle = document.getElementById("FirstTriangleInput").value;
+    const SecondTriangle = document.getElementById("SecondTriangleInput").value;
+    const ThirdTriangle = document.getElementById("BaseTriangleInput".value);
+    const Perimeter = PerimetroTriangulo(FirstTriangle,SecondTriangle,ThirdTriangle)
 }
 function CalcularAreaTriangulo() {
     const BaseInput = document.getElementById("BaseTriangleInput");
